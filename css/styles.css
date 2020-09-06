@@ -1,0 +1,53 @@
+header{
+    height: 100vh;
+    background-image: url("../imagenes/compu.jpg");
+    background-position-y: center;
+    background-size: cover;
+}
+
+h1{
+    padding-top: 8%;
+}
+
+h2{
+    margin-top: 10%
+}
+
+h4{
+    padding-top: 1%;
+}
+
+.padding{
+    padding-left: 7%
+}
+
+.icono{
+    font-size: 70px;
+}
+
+.icono:hover{
+
+    transform: scale(1.5); /*te agranda la imagen*/
+    transition-duration: 400ms; /*La agranda un poco mas despacio*/
+}
+
+.footer{
+    background-color: #333333;
+    color: white;
+    height: 220px;
+}
+
+.textoIconos{
+    padding-left: 17%
+}
+
+textarea{
+    resize: none;
+}
+
+
+/*<i style="color: #e44d26" class="fab fa-html5 iconos"></i>
+
+<i style="color: #0170ba" class="fab fa-css3-alt iconos"></i>*/
+
+
