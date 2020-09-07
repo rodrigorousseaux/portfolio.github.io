@@ -25,10 +25,19 @@ h4{
     font-size: 70px;
 }
 
+.textoIconos{
+    padding-left: 17%
+}
+
+/*Transformaciones: Comienzan y terminan*/
 .icono:hover{
 
     transform: scale(1.5); /*te agranda la imagen*/
     transition-duration: 400ms; /*La agranda un poco mas despacio*/
+}
+
+textarea{
+    resize: none;
 }
 
 .footer{
@@ -36,18 +45,5 @@ h4{
     color: white;
     height: 220px;
 }
-
-.textoIconos{
-    padding-left: 17%
-}
-
-textarea{
-    resize: none;
-}
-
-
-/*<i style="color: #e44d26" class="fab fa-html5 iconos"></i>
-
-<i style="color: #0170ba" class="fab fa-css3-alt iconos"></i>*/
 
 
