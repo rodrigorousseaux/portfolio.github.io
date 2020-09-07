@@ -1,5 +1,5 @@
 header{
-    height: 91vh;
+    height: 100vh;
     background-image: url("../imagenes/compu.jpg");
     background-position-y: center;
     background-size: cover;
@@ -7,14 +7,35 @@ header{
 
 h1{
     padding-top: 8%;
+    font-weight: 600;
+}
+
+h3{
+    font-weight: 600;
+    padding-top: 3%;
 }
 
 h2{
-    margin-top: 10%
+    text-decoration: underline;
+    margin-top: 10%  
 }
 
-h4{
-    padding-top: 3%;
+.boton{
+    color: #fff;
+    /*border: 3px solid #087eaf;*/
+    background-color: #b83008;
+    opacity: 0.8;
+    border: 3px solid #d16007;
+    font-size: large;
+    font-weight: 800;
+}
+
+.boton:hover{
+    color: white;
+    /*background-color: #07648a;*/
+    background-color: #b83008;
+    opacity: 1;
+    
 }
 
 .padding{
@@ -22,7 +43,7 @@ h4{
 }
 
 .icono{
-    font-size: 70px;
+    font-size: 50px;
 }
 
 .textoIconos{
@@ -32,12 +53,12 @@ h4{
 /*Transformaciones: Comienzan y terminan*/
 .icono:hover{
 
-    transform: scale(1.5); /*te agranda la imagen*/
+    transform: scale(1.3); /*te agranda la imagen*/
     transition-duration: 400ms; /*La agranda un poco mas despacio*/
 }
 
 textarea{
-    resize: none;
+    resize: none; /*Para que el usuario no pueda modificar el tamaño del textarea*/
 }
 
 .footer{
