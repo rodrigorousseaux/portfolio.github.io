@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    background-image: url("../imagenes/compu.jpg");
+    background-image: url("../imagenes/compu2.jpg");
     background-position-y: center;
     background-size: cover;
 }
@@ -104,34 +104,19 @@ textarea{
             animation-name: animacion1;
             -moz-animation-name: animacion1;
             -ms-animation-name: animacion1;
-            animation-duration: 0.9s;
-            -moz-animation-duration: 0.9s;
-            -ms-animation-duration: 0.9s;
+            animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            -ms-animation-duration: 1.s;
 }
 
 @keyframes animacion1{
 
     0%{
-        left: 0px;
-    }
-
-    50%{
-        left: 80px;
-
-    }
-    75%{
         left: -80px;
-
     }
-    85%{
-        left: -2px;
-    }
-    90%{
-        left: 2px;
-    }
-    92%{
-        left: -1px;
-    }
+    50%{    
+        left: 80px;
+    }   
     100%{
         left: 0px;
     }
