@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    background-image: url("../imagenes/compu2.jpg");
+    background-image: url("../imagenes/compu.jpg");
     background-position-y: center;
     background-size: cover;
 }
@@ -101,22 +101,19 @@ textarea{
 .botonAnimado{
 
     position: relative;
-            animation-name: animacion1;
-            -moz-animation-name: animacion1;
-            -ms-animation-name: animacion1;
-            animation-duration: 1s;
-            -moz-animation-duration: 1s;
-            -ms-animation-duration: 1.s;
+    animation-name: animacion1;
+    -moz-animation-name: animacion1;
+    -ms-animation-name: animacion1;
+    animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    -ms-animation-duration: 0.5s;
 }
 
 @keyframes animacion1{
 
     0%{
-        left: -80px;
-    }
-    50%{    
-        left: 80px;
-    }   
+        left: -1000px;
+    }  
     100%{
         left: 0px;
     }
