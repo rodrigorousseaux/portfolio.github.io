@@ -1,49 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animaciones</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animaciones</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 
-    <style>
+    <body>
 
-        #boton{ 
-            position: relative;
-            left: 30px;
-            width: 200px;
-            height: 100px;
-            background-color: rebeccapurple;
-            padding: 6px;
-            border-radius: 10px;
-            animation-name: animacion1;
-            -moz-animation-name: animacion1;
-            -ms-animation-name: animacion1;
-            animation-duration: 4s;
-            -moz-animation-duration: 4s;
-            -ms-animation-duration: 4s;
-        }
-
-        @keyframes animacion1{
-
-            from{
-                left: 30px;
-                background: rebeccapurple;
-            }
-
-            to{
-                left: 200px;
-                background: yellow
-            }
-
-
-        }
-
-    </style>
-
-</head>
-<body>
-
-    <div id="boton"></div>
-    
-</body>
+        <video src="videos/Citizen.Kane.1941.1080p.BrRip.x264.BOKUTOX.YIFY.mp4" 
+            width="100%" 
+            height="100%"  
+            autoplay 
+            loop 
+            controls>
+        </video>
+        
+    </body>
 </html>
