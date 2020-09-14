@@ -15,17 +15,46 @@ h1{
 }
 
 h3{
+    color: #444649;
     font-weight: 600;
     padding-top: 3%;
 }
 
-#subrayado{
-    font-size: 2.5rem;
-    font-weight: 500;
-    border-bottom: 5px solid #000;
-    padding-bottom: 15px;
-    margin-right: 43%;
-    margin-left: 43%;
+h2{
+    color: #444649;
+    font-weight: 700;
+}
+
+.subrayadoSobreMi{
+    background: #444649;
+    height: 4px;
+    width: 70px;
+    margin-top: 1.5%;
+    margin-left: 47.3%; 
+}
+
+.subrayadoTecnologias{
+    background: #444649;
+    height: 4px;
+    width: 70px;
+    margin-top: 1.5%;
+    margin-left: 47%; 
+}
+
+.subrayadoProyectos{
+    background: #444649;
+    height: 4px;
+    width: 70px;
+    margin-top: 1.5%;
+    margin-left: 47%; 
+}
+
+.subrayadoContacto{
+    background: #444649;
+    height: 4px;
+    width: 70px;
+    margin-top: 1.5%;
+    margin-left: 47%; 
 }
 
 .boton{
@@ -70,13 +99,15 @@ li:hover{
 }
 
 .imagenPerfil:hover{
-    opacity: 1;
+    opacity: 0.8;
     transform: scale(1.02);
     transition-duration: 400ms;
 }
 
-.marginParrafo{
-    margin-top: 3%;
+.parrafo{
+    color: #444649;
+    font-weight: 400;
+    margin-top: 2%;
     margin-left: 15%;
     margin-right: 15%;
 }
@@ -146,6 +177,10 @@ textarea{
     background-color: gray;
     color: white;
     height: 220px;
+}
+
+span{
+    color: black;
 }
 
 a:hover {
