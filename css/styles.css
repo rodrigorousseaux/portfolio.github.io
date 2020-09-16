@@ -25,36 +25,10 @@ h2{
     font-weight: 700;
 }
 
-.subrayadoSobreMi{
+.subrayado{
     background: #444649;
     height: 4px;
     width: 70px;
-    margin-top: 1.5%;
-    margin-left: 47.3%; 
-}
-
-.subrayadoTecnologias{
-    background: #444649;
-    height: 4px;
-    width: 70px;
-    margin-top: 1.5%;
-    margin-left: 47%; 
-}
-
-.subrayadoProyectos{
-    background: #444649;
-    height: 4px;
-    width: 70px;
-    margin-top: 1.5%;
-    margin-left: 47%; 
-}
-
-.subrayadoContacto{
-    background: #444649;
-    height: 4px;
-    width: 70px;
-    margin-top: 1.5%;
-    margin-left: 47%; 
 }
 
 .boton{
