@@ -52,6 +52,10 @@ nav{
     border-bottom-color: #b83008;
 }
 
+.margenTecnologias{
+    margin-top: 8%;
+}
+
 li:hover{
 
     background-color: #b83008;
