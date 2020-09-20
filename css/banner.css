@@ -1,0 +1,28 @@
+.rodrigo_sombra{
+    position: absolute; /*es flotante, no tiene una posicion en particular*/
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*de izquierda a derecha, de arriba para abajo*/
+    padding: 13.91%;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: auto;
+}
+
+.rodrigo_sombra hr{
+    border-top: 1px solid #fff;
+}
+
+.rodrigo_sombra h1{
+    font-size: 5vw; /*vw: Se va a redimensionar no importa como tengas la pagina*/
+    margin-bottom: 8%;
+}
+
+.rodrigo_sombra h3{
+    font-size: 4vw; 
+    font-weight: bold;
+}
