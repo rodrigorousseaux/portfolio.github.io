@@ -5,10 +5,10 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="ext/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/banner.css">
+        <link rel="stylesheet" href="css/keyframes.css">
         <script src="https://kit.fontawesome.com/720136c9e8.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet"> 
 
@@ -24,77 +24,76 @@
                 <hr>
             
                 <div class="d-flex justify-content-center pt-5">
-                    <a href="#botonera_principal" class="btn badge-pill boton botonAnimado">Conoce Mi Trabajo</a>
+                    <a href="#botonera_principal" class="btn boton botonAnimado">Conoce Mi Trabajo</a>
                 </div>      
             </div>
             
         </header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="botonera_principal">
-            <div class="">
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse">
-
-                    <ul class="navbar-nav">
+        <div class="container-fluid">
+            <div class="row fondo_nav">
+                <div id="botonera_principal" class="col-xl-4 col-md-12 xs-12 d-flex justify-content-center align-items-center">
+                    <nav class="navbar navbar-expand-lg navbar-dark navBarAnimado">
+        
+                        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                     
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#about">Sobre Mi</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#skills">Tecnologías</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#proyectos">Proyectos</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link text-white" href="#contacto">Contacto</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-
-            </div>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav bg-dark">
+                                <li class="nav-item">
+                                    <a class="nav-link text-warning" href="#botonera_principal">Sobre Mi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#tecnologias">Conocimientos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#proyectos">Proyectos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#contacto">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>   
+            </div>  
+        </div>
             
-        </nav>
+        
 
-        <section class="container-fluid bg-light pt-5 pb-5" id="about"> <!--CONTAINER OCUPA EL 80% Y ES CENTRADA ......... MT-5 es el margin de bootstrap-->
+        <section class="container-fluid bg-light seccion_sobre_mi" id="sobre_mi"> <!--CONTAINER OCUPA EL 80% Y ES CENTRADA ......... MT-5 es el margin de bootstrap-->
 
             <h2 class="text-center">SOBRE MI</h2>
 
             <div class="d-flex justify-content-center mt-3">
-                <div class="subrayado"></div>
+                <div class="mb-5 subrayado"></div>
             </div>
             
 
-            <div class="row">
+            <div class="row d-flex justify-content-around">
 
-                <div class="col-xl-12 col-lg-12 col-xs-12 d-flex justify-content-center mt-5">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-xs-12 d-flex justify-content-center mt-5">
 
-                    <img
-                    class="imagenPerfil"
-                    src="imagenes/rod.jpg" 
-                    width="220px"
-                    height="210px"
-                    alt="foto rodrigo rousseaux">
+                    <div class="contenedor">
+                        <img
+                        class="imagenPerfil"
+                        src="imagenes/rod.jpg" 
+                        alt="foto rodrigo rousseaux">
+                    </div>
+                    
                                 
                 </div>
 
-                <div class="col-xl-12 col-lg-12 col-xs-12"> <!-- p-5 es el padding de bootstrap-->
+                <div class="col-xl-8 col-lg-8 col-md-12 col-xs-12 d-flex justify-content-center contenedor mt-5"> <!-- p-5 es el padding de bootstrap-->
 
-                    <h3 class="d-flex justify-content-center mt-3">¿Quién soy?</h3>
+                    <div class="">
 
-                    <div>
+                        <h3 class="d-flex justify-content-center">¿Quién soy?</h3>
 
-                        <p class="text-center parrafo">
+                        <p class="">
                             Soy un estudiante de primer año de la Tecnicatura en Sistemas Informáticos en UTN, con el objetivo de 
-                            insertarme como Trainee en el rubro de la Programación. Poseo experiencia en multinacionales como empleado 
+                            insertarme como Trainee/Jr en el rubro de la Programación. Poseo experiencia en multinacionales como empleado 
                             administrativo. Autodidacta y en búsqueda constante del crecimiento personal y profesional.
                         </p>
 
@@ -105,7 +104,7 @@
             </div>
         </section>
 
-        <section class="container-fluid bg-dark pt-5 pb-5" id="skills">
+        <section class="container-fluid seccion_tecnologias" id="tecnologias">
 
             <h2 class="text-center text-white">CONOCIMIENTOS</h2>
 
@@ -113,59 +112,197 @@
                 <div class="bg-light subrayado"></div>
             </div>
 
-            <div class="row margenTecnologias align-items-center">
+            <div class="row mt-5 d-flex justify-content-around align-items-center ">
 
-                <div class="col-lg-2 col-md-6 col-xs-12 d-flex justify-content-center">
-                    <img class="icono" width="62px" src="imagenes/java.png" alt="imagen lenguaje java" title="Java">
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-5 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>Java</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <img class="icono_tecnologias" width="62px" src="imagenes/java.png" alt="imagen lenguaje java" title="Java">
+                    </div>
+
+                    <div class="progress">
+                        <div
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6 col-xs-12 d-flex justify-content-center">
-                    <img class="icono" width="50px" src="imagenes/python.png" alt="imagen python" title="Python">
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-5 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>Python</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <img class="icono_tecnologias" width="62px" src="imagenes/python.png" alt="imagen python" title="Python">
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div 
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
                 </div>
 
-                <div class="col-lg-2 col-md-6 col-xs-12 d-flex justify-content-center">
-                    <img class="icono" width="52px" src="imagenes/c++.png" alt="imagen lenguaje c++" title="C++">
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-1 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>C++</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <img class="icono_tecnologias" width="62px" src="imagenes/c++.png" alt="imagen lenguaje c++" title="C++">
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div 
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
+                    
                 </div>
 
-                <div class="col-lg-2 col-md-6 col-xs-12 d-flex justify-content-center">
-                    <img class="icono" width="55px" src="imagenes/c.png" alt="imagen lenguaje c" title="C">
-                </div>  
-                
-                <div class="col-lg-2 col-md-6 col-xs-12 d-flex justify-content-center">
-                    <i style="color: #f7e018;" class="fab fa-js-square icono" title="JavaScript"></i>
-                </div>
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-1 contenedor mb-3">
 
-                <div class="col-lg-2 col-md-3 col-xs-3 d-flex justify-content-center">
-                    <i style="color: #e44d26" class="fab fa-html5 icono" title="HTML5"></i>
-                </div>
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>C</h3>
+                    </div>
 
-                <!--<div class="col-lg-2 col-md-6 col-xs-12 d-flex justify-content-center">
-                    <img class="icono" width="50px" src="imagenes/node.png" alt="imagen node js" title="Node.js">
-                </div>   -->
+                    <div class=",b-3 d-flex justify-content-center">
+                        <img class="icono_tecnologias" width="62px" src="imagenes/c.png" alt="imagen lenguaje c" title="C">
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div 
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
+                    
+                </div> 
             </div>
 
-            <div class="row margenTecnologias align-items-center">
+            <div class="row mt-5 d-flex justify-content-around align-items-center">
 
-                <div class="col-lg-2 col-md-3 col-xs-3 d-flex justify-content-center">
-                        <i style="color: #0170ba" class="fab fa-css3-alt icono" title="CSS3"></i>
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-1 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>HTML5</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <i style="color: #e44d26" class="fab fa-html5 icono_tecnologias" title="HTML5"></i>
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
+                    
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-xs-3 d-flex justify-content-center">
-                    <i style="color: #8955d7;" class="fab fa-bootstrap icono" title="Bootstrap"></i>
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-1 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>CSS3</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <i style="color: #0170ba" class="fab fa-css3-alt icono_tecnologias" title="CSS3"></i>
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
+                        
+                </div>
+
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-1 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>Bootstrap</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <i style="color: #8955d7;" class="fab fa-bootstrap icono_tecnologias" title="Bootstrap"></i>
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
+                    
                 </div> 
 
-                <div class="col-lg-2 col-md-3 col-xs-3 d-flex justify-content-center">
-                    <i style="color: #ef441f;" class="fab fa-git-alt icono" title="Git"></i>
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-1 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>JavaScript</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <i style="color: #f7e018;" class="fab fa-js-square icono_tecnologias" title="JavaScript"></i>
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div 
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="row mt-5 d-flex justify-content-around align-items-center">
+
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-1 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>Git</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <i style="color: #ef441f;" class="fab fa-git-alt icono_tecnologias" title="Git"></i>
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div 
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
+                    
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-xs-3 d-flex justify-content-center">
-                    <i class="fab fa-github-square icono github" title="Github"></i>
+                <div class="col-xl-2 col-lg-2 col-md-5 col-xs-1 contenedor mb-3">
+
+                    <div class="mb-2 d-flex justify-content-center">
+                        <h3>GitHub</h3>
+                    </div>
+
+                    <div class="mb-3 d-flex justify-content-center">
+                        <i class="fab fa-github-square icono_tecnologias github" title="Github"></i>
+                    </div>
+
+                    <div class="progress mt-3">
+                        <div 
+                            class="pb-1 progress-bar progress_bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+                        </div>                   
+                    </div>
+                    
                 </div>
+
             </div>
  
         </section>
 
-        <section class="container-fluid bg-light pt-5 pb-5" id="proyectos">
+        <section class="container-fluid seccion_proyectos" id="proyectos">
 
             <h2 class="text-center">PROYECTOS</h2>
 
@@ -183,8 +320,9 @@
                     
                         <div class="card-body">
                             <h4 class="card-title text-center">Mi Portfolio</h4>
+                            <hr>
                             <p>
-                                Mi portfolio personal creado con HTML5, CSS3, Bootstrap 4, JavaScript y Node.js.
+                                Mi portfolio personal creado con HTML5, CSS3, Bootstrap 4, JavaScript, MongoDB y Node.js.
                             </p>
                             <div class="text-center">
                                 <a class="linkProyecto" 
@@ -204,6 +342,7 @@
                     
                         <div class="card-body">
                             <h4 class="card-title text-center">Calculadora</h4>
+                            <hr>
                             <p>
                                 Calculadora creada completamente en Java, utilizando interfaces gráficas con la clase JFrame.
                             </p>
@@ -239,7 +378,7 @@
             </div>   
         </section>
 
-        <section class="container-fluid bg-dark pt-5 pb-5" id="contacto">
+        <section class="container-fluid seccion_contacto" id="contacto">
 
             <h2 class="text-center text-white">CONTACTO</h2>
 
@@ -251,7 +390,7 @@
 
                 <div class="col-xl-6 col-lg-6 col-xs-12">
                     
-                    <form class="mt-5" method="POST" action="#">
+                    <form class="mt-5 contenedor" method="POST" action="#">
 
                         <div class="form-group text-white">
                             <label for="nombre">Nombre Completo <span class="text-danger">*</span></label>
@@ -278,23 +417,23 @@
 
         </section>      
 
-        <footer class="container-fluid footer">
+        <footer class="container-fluid">
 
             <div class="row">
 
                 <div class="col-lg-12 col-md-3 col-xs-12 d-flex justify-content-center pt-5">
                     
-                    <div class="borde p-1">
+                    <div class="borde p-1 d-flex justify-content-between">
                         <a class="sacarSubrayado" href="https://www.linkedin.com/in/rodrigo-rousseaux/" target="_blank">
-                            <i class="fab fa-linkedin icono linkedin" title="Linkedin"></i>
-                        </a>
-
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <i class="fab fa-instagram-square icono insta" aria-hidden="true" title="Instagram"></i> 
+                            <i class="fab fa-linkedin icono_redes linkedin" title="Linkedin"></i>
                         </a>
 
                         <a href="https://github.com/rodrigorousseaux?tab=repositories" target="_blank">
-                            <i class="fab fa-github-square icono github" title="GitHub"></i>    
+                            <i class="fab fa-github-square icono_redes github" title="GitHub"></i>    
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fab fa-instagram-square icono_redes insta" aria-hidden="true" title="Instagram"></i> 
                         </a>
                     </div>
                 </div>
@@ -307,6 +446,10 @@
             </div>
 
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
     </body>
 </html>
